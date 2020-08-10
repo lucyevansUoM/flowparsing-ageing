@@ -5,8 +5,6 @@ function [staticPSE, staticSigma, movingPSE, movingSigma] = fitPF_right(mainFold
 % fitPF_right code written 06/01/20
 % (adapted from fitPF_LR)
 %
-% Have written importFile to flip sign of stim levels and change resps to
-% 1 (right) and 0 (left) so it makes sense - check this!
 %
 % Coded as if data was collected with the probe on the right  
 %
@@ -24,7 +22,7 @@ close all
 
 matFile_content = '%s_FPI_R.mat';  
 matFile_specific = sprintf(matFile_content, pnum);
-matFile = fullfile(mainFolder, pnum, '\', matFile_specific);
+matFile = fullfile(mainFolder, pnum, filesep, matFile_specific);
 load (matFile)
 
 %% Set up some trial/stair params
@@ -117,7 +115,7 @@ if plotFlag
     legend({'Static', 'Moving'}, 'Location', 'northwest', 'FontSize', 12);
     
     fig_name = sprintf('%s_PFfig.jpg',pnum);
-    fig_filename = fullfile(mainFolder, pnum, '\', fig_name);
+    fig_filename = fullfile(mainFolder, pnum, filesep, fig_name);
     saveas(gcf,fig_filename);
     
 %     %SC Figure
