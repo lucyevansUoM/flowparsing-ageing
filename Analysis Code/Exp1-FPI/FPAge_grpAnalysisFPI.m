@@ -2,7 +2,7 @@
 % and store in a group matrix
 
 %% Find participant directories in main folder 
-mainFolder = 'E:\Experiments\FPI_RT_EXPS\Ageing_Data\dataFiles\FPI';  % absolute path of data folder
+mainFolder = '...\dataFiles\FPI';  % absolute path of data folder - COMPLETE THIS
 
 plotFlag = 1; % 1 to ouput each PF plot; 0 to not
 
