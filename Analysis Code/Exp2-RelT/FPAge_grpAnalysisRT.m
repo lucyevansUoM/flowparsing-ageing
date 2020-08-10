@@ -2,7 +2,7 @@
 % relative tilts for each participant, placing them in a group matrix
 
 %% Find data files 
-mainFolder = 'E:\Experiments\FPI_RT_EXPS\Ageing_Data\dataFiles\RT';   % absolute path of data folder
+mainFolder = '...\dataFiles\RT';   % absolute path of data folder - COMPLETE THIS
 
 subFolder = dir(fullfile(mainFolder,'P*'));
 
